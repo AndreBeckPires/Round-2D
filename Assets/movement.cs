@@ -31,7 +31,7 @@ public class movement : MonoBehaviour
         }
         if(timer <= 0)
         {
-            print("entrou");
+   
             if(audioData.isPlaying)
             audioData.Stop();
             else if (!audioData.isPlaying)
@@ -43,13 +43,13 @@ public class movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            print("space key A pressed");
+          
             keyA = true;
 
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            print("space key D pressed");
+            
             if (keyA == true)
                 keyD = true;
             else
